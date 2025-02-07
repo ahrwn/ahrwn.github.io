@@ -1,0 +1,32 @@
+.title {
+	font-weight: 1;
+	
+	text-decoration: underline;
+	text-decoration-color: #cfc8b8;
+}
+
+h2 {
+	color: #3f0000
+}
+
+a {
+	color: #a67b5b;
+}
+
+body {
+	background-color: #fff8e7;
+}
+
+.Tabbed {
+	padding-right: 25%;
+	padding-left: 25%;
+}
+
+.center {
+	text-align: center
+}
+
+.italbol {
+	font-style: italic;
+	font-weight: bold;
+}
