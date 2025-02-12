@@ -3,27 +3,36 @@
 <head>
 	<title>Blog</title>
 	<link rel='stylesheet' type='text/css' href='../style.css'>
+	<!-- Include ZeroMD -->
+	<script src="https://cdn.jsdelivr.net/npm/zero-md@latest/zero-md.min.js"></script>
 </head>
 
-<html>
-	<body>
-		<div class="center">
-			<h2 class="title">Various thoughts</h2>
-			<a href=".."><h4>< Back</h4></a></center>
-		</div>
+<body>
+	<div class="center">
+		<h2 class="title">Various thoughts</h2>
+		<a href=".."><h4>< Back</h4></a>
+	</div>
 
-		<div class="Tabbed">
-			<ul style="list-style: none">
-        <li><a href="2024-02-09-batch-edit-files-with-ed.txt">2024-02-09: Batch edit files with ed</a></li>
-				<li><a href="2024-10-22-simple-cicd.txt">2024-10-22: Simple shell script do automate ci cd.</a></li>
-				<li><a href="2024-06-05-programmer-death.txt">2024-06-05: Being a programmer is unnatural and bad for health lets fix that.</a></li>
-				<li><a href="2024-04-10-inputs.txt">2024-04-10: Ruthlessly curate the inputs in your life</a></li>
-				<li><a href="2024-01-15-the-baseline.txt">2024-01-15: Goals that need to be achieved every single day</a></li>
-				<li><a href="2023-06-12-future-friend.txt">2023-06-12: Discussion on the viewing your actions in a different angle</a></li>
-				<li><a href="2023-02-15-mirror.txt">2023-02-15: How your actions and views directly effect the world around you</a></li>
-				<li><a href="2023-01-25-gitea-docker.txt">2023-01-25: Forget the bloated whale we are adding docker containers to gitea</a></li>
-				<li><a href="2023-01-20-mastering-angular-structural-directives-the-basics.txt">2023-01-20: Mastering Angular Directives: Basics</a></li>
-			</ul>
-		</div>
-	</body>
+	<div class="Tabbed">
+		<ul style="list-style: none">
+			<li><a href="2025-02-09-batch-edit-files-with-ed.md" target="zero-md">2024-02-05: Batch edit files with ed</a></li>
+			<li><a href="2024-10-22-simple-cicd.md" target="zero-md">2024-10-22: Simple shell script to automate ci cd</a></li>
+			<li><a href="2024-06-05-programmer-death.md" target="zero-md">2024-06-05: Being a programmer is unnatural and bad for health. Let's fix that.</a></li>
+			<li><a href="2024-04-10-inputs.md" target="zero-md">2024-04-10: Ruthlessly curate the inputs in your life</a></li>
+			<li><a href="2024-01-15-the-baseline.md" target="zero-md">2024-01-15: Goals that need to be achieved every single day</a></li>
+			<li><a href="2023-06-12-future-friend.md" target="zero-md">2023-06-12: Discussion on viewing your actions in a different angle</a></li>
+			<li><a href="2023-02-15-mirror.md" target="zero-md">2023-02-15: How your actions and views directly affect the world around you</a></li>
+			<li><a href="2023-01-25-gitea-docker.md" target="zero-md">2023-01-25: Forget the bloated whale; we are adding Docker containers to Gitea</a></li>
+			<li><a href="2023-01-20-mastering-angular-structural-directives-the-basics.md" target="zero-md">2023-01-20: Mastering Angular Directives: Basics</a></li>
+		</ul>
+	</div>
+
+	<!-- Add ZeroMD container to render the markdown -->
+	<zero-md id="zero-md" class="zero-md"></zero-md>
+
+	<script>
+		// Optional: You can customize ZeroMD behavior here if needed
+		// Example: ZeroMD.render('2024-02-09-batch-edit-files-with-ed.md');
+	</script>
+</body>
 </html>

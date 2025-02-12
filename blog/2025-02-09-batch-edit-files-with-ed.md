@@ -1,3 +1,10 @@
+---
+title: Batch edit with ed
+date: 2025-02-09
+teaser: Explore the greatness of ed
+slug: 2023-01-25-batch-edit-files-with-ed
+---
+
 The other day at work I needed to edit 200 files at once across dozens of repos. I wanted to do something pretty simple: basically, I had files that looked like this:
 
     foo:
