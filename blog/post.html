@@ -22,7 +22,85 @@
         <a href="index.html"><h4>< Back to Blog</h4></a>
     </div>
 
-    <zero-md id="zero-md" class="zero-md"></zero-md>
+    <zero-md id="zero-md" class="zero-md">
+      <template data-append>
+        <style>
+          /* Use your existing styles */
+          html {
+            font-size: 20px;
+            text-size-adjust: none;
+            -webkit-text-size-adjust: none;
+          }
+
+          body {
+            background-color: #fff8e7;
+          }
+
+          .title {
+            font-weight: bold;
+            text-decoration: underline;
+            text-decoration-color: #cfc8b8;
+          }
+
+          h2 {
+            color: #3f0000;
+          }
+
+          a {
+            color: #a67b5b;
+          }
+
+          .Tabbed {
+            padding-right: 25%;
+            padding-left: 25%;
+          }
+
+          .center {
+            text-align: center;
+          }
+
+          .italbol {
+            font-style: italic;
+            font-weight: bold;
+          }
+
+          /* Additional styles for ZeroMD content */
+          zero-md::part(content) {
+            font-family: sans-serif;
+            line-height: 1.6;
+          }
+
+          zero-md::part(content) h1,
+          zero-md::part(content) h2,
+          zero-md::part(content) h3 {
+            color: #3f0000;
+            font-weight: bold;
+          }
+
+          zero-md::part(content) p {
+            color: #222;
+          }
+
+          zero-md::part(content) a {
+            color: #a67b5b;
+            text-decoration: underline;
+          }
+
+          zero-md::part(content) code {
+            background: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+          }
+
+          zero-md::part(content) pre {
+            background: #eee;
+            padding: 10px;
+            border-radius: 8px;
+            overflow-x: auto;
+          }
+        </style>
+      </template>
+    </zero-md>
 </body>
 </html>
 
