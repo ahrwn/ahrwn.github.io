@@ -3,10 +3,7 @@
 <head>
     <title>Blog</title>
     <link rel='stylesheet' type='text/css' href='../style.css'>
-    <!-- Import ZeroMD with auto-register -->
-    <script type="module" src="https://cdn.jsdelivr.net/npm/zero-md@3?register"></script>
 </head>
-
 <body>
     <div class="center">
         <h2 class="title">Various thoughts</h2>
@@ -15,28 +12,17 @@
 
     <div class="Tabbed">
         <ul style="list-style: none">
-            <!-- Update the paths to the Markdown files -->
-            <li><a href="#" onclick="loadMarkdown('blog/2024-02-09-batch-edit-files-with-ed.md')">2024-02-09: Batch edit files with ed</a></li>
-            <li><a href="#" onclick="loadMarkdown('blog/2024-10-22-simple-cicd.md')">2024-10-22: Simple shell script to automate ci cd</a></li>
-            <li><a href="#" onclick="loadMarkdown('blog/2024-06-05-programmer-death.md')">2024-06-05: Being a programmer is unnatural and bad for health. Let's fix that.</a></li>
-            <li><a href="#" onclick="loadMarkdown('blog/2024-04-10-inputs.md')">2024-04-10: Ruthlessly curate the inputs in your life</a></li>
-            <li><a href="#" onclick="loadMarkdown('blog/2024-01-15-the-baseline.md')">2024-01-15: Goals that need to be achieved every single day</a></li>
-            <li><a href="#" onclick="loadMarkdown('blog/2023-06-12-future-friend.md')">2023-06-12: Discussion on viewing your actions in a different angle</a></li>
-            <li><a href="#" onclick="loadMarkdown('blog/2023-02-15-mirror.md')">2023-02-15: How your actions and views directly affect the world around you</a></li>
-            <li><a href="#" onclick="loadMarkdown('blog/2023-01-25-gitea-docker.md')">2023-01-25: Forget the bloated whale; we are adding Docker containers to Gitea</a></li>
-            <li><a href="#" onclick="loadMarkdown('blog/2023-01-20-mastering-angular-structural-directives-the-basics.md')">2023-01-20: Mastering Angular Directives: Basics</a></li>
+            <li><a href="post.html?post=2025-02-09-batch-edit-files-with-ed">2024-02-09: Batch edit files with ed</a></li>
+            <li><a href="post.html?post=2024-10-22-simple-cicd">2024-10-22: Simple shell script to automate ci cd</a></li>
+            <li><a href="post.html?post=2024-06-05-programmer-death">2024-06-05: Being a programmer is unnatural and bad for health. Let's fix that.</a></li>
+            <li><a href="post.html?post=2024-04-10-inputs">2024-04-10: Ruthlessly curate the inputs in your life</a></li>
+            <li><a href="post.html?post=2024-01-15-the-baseline">2024-01-15: Goals that need to be achieved every single day</a></li>
+            <li><a href="post.html?post=2023-06-12-future-friend">2023-06-12: Discussion on viewing your actions in a different angle</a></li>
+            <li><a href="post.html?post=2023-02-15-mirror">2023-02-15: How your actions and views directly affect the world around you</a></li>
+            <li><a href="post.html?post=2023-01-25-gitea-docker">2023-01-25: Forget the bloated whale; we are adding Docker containers to Gitea</a></li>
+            <li><a href="post.html?post=2023-01-20-mastering-angular-structural-directives-the-basics">2023-01-20: Mastering Angular Directives: Basics</a></li>
         </ul>
     </div>
-
-    <!-- ZeroMD container will display the selected markdown file -->
-    <zero-md id="zero-md" class="zero-md"></zero-md>
-
-    <script>
-        // This function dynamically loads the selected markdown file into the <zero-md> container
-        function loadMarkdown(file) {
-            const zeroMdElement = document.getElementById('zero-md');
-            zeroMdElement.setAttribute('src', file);  // Set the src attribute to load the selected markdown file
-        }
-    </script>
 </body>
 </html>
+

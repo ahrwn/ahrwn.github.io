@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Blog Post</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/zero-md@3?register"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const params = new URLSearchParams(window.location.search);
+            const post = params.get("post");
+
+            if (post) {
+                document.getElementById("zero-md").setAttribute("src", `./${post}.md`);
+            } else {
+                document.getElementById("zero-md").innerHTML = "<h2>Post not found.</h2>";
+            }
+        });
+    </script>
+</head>
+<body>
+    <div class="center">
+        <a href="index.html"><h4>< Back to Blog</h4></a>
+    </div>
+
+    <zero-md id="zero-md" class="zero-md"></zero-md>
+</body>
+</html>
+
